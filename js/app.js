@@ -100,7 +100,7 @@ function exportRows(){
   const link=document.createElement("a");link.href=URL.createObjectURL(new Blob([csv],{type:"text/csv"}));link.download="synthetic-student-demo.csv";link.click();URL.revokeObjectURL(link.href);
   toast(`Exported ${rows.length} illustrative demo records.`);
 }
-const API_BASE_URL = "https://YOUR-RENDER-APP-NAME.onrender.com";
+const API_BASE_URL = "https://dropout-risk-nauj.onrender.com";
 
 async function calculateDemo(form){
   const ageText=form.elements.age.value.trim(), admissionText=form.elements.admission.value.trim(), previousText=form.elements.previousQualification.value.trim();
